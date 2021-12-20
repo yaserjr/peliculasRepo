@@ -13,7 +13,7 @@ function App() {
     <Pelicula titulo={pelicula.titulo} img={pelicula.img} calificacion={pelicula.calificacion} duracion={pelicula.duracion} director={pelicula.director} actores={pelicula.actores} fecha={pelicula.fecha} >
     {pelicula.descripcion}
     </Pelicula>   
-   )
+   ) 
    }
     </PageWrapper>
     
