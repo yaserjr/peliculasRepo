@@ -6,6 +6,8 @@ import peliculasJson from './peliculas.json';
 import Paginacion from './Paginacion';
 import { useState } from 'react';
 
+// video en 2:10
+
 function App() {
   const [paginaActual, setPaginaActual] = useState(1);
   let pelicula = peliculasJson;
