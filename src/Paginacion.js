@@ -2,9 +2,11 @@ export default function Paginacion(props){
  
  const getPaginas = () =>{
      const resultado = [];
-     for(var i = 0; i<props.total; i++){
-        resultado.push(
-        <a onClick={props.onChange} className="active" href="#">{i + 1}</a>
+     for(let i = 0; i<props.total; i++){
+       let pagina = i + 1;
+      resultado.push(
+        <a onClick={()=> props.onChange(pagina)}
+         className={props.pagina === pagina ? 'active' : ''} >{pagina}</a>
         );
      }
      return resultado;
